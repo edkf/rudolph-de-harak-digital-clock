@@ -1,12 +1,15 @@
 .container {
+    width: 100%;
     aspect-ratio: 1 / 1;
-    border: 5px solid #fff;
-    padding: 15px;
+    border: 1px solid #ffffff;
+    /* padding: 5px; */
     font-weight: bold;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: -2.5px;
+    font-size: 78px;
 }
 
 .isHour {
