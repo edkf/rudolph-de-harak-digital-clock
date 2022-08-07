@@ -1,0 +1,22 @@
+.container {
+    aspect-ratio: 1 / 1;
+    border: 5px solid #fff;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isHour {
+    color: red;
+}
+
+.isMinute {
+    color: blue;
+}
+
+.isSecond {
+    color: green;
+}
