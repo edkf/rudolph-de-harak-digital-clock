@@ -5,9 +5,9 @@ export default function NumberItem({
   number,
   isHour,
   isMinute,
-  isSecond
+  isSecond,
+  addZero
 }) {
-
 
   const containerStyles = cx(styles.container, {
     [`${styles.isHour}`] : isHour,
@@ -19,7 +19,9 @@ export default function NumberItem({
     <div
       className={containerStyles}
     >
-      { number }
+      {
+        addZero ? ('0' + number).slice(-2) : number
+      }
     </div>
   )
 }

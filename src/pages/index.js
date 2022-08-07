@@ -37,6 +37,7 @@ export default function Home() {
               number={i}
               isMinute={getCurrentMinute === i}
               isSecond={getCurrentSecond === i}
+              addZero
             />
           )}
         </div>
