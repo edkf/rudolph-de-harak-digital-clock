@@ -2,7 +2,7 @@ import  React, { useState , useEffect } from 'react'
 import uuid from 'react-uuid'
 
 import styles from '../styles/Home.module.css'
-import NumberItem from '../components/numberItem'
+import NumberItem from '../components/NumberItem'
 
 function hours12 (date) {
   return (date.getHours() + 24) % 12 || 12
