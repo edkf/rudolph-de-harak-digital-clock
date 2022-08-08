@@ -1,4 +1,5 @@
 import  React, { useState , useEffect } from 'react'
+import uuid from 'react-uuid'
 
 import styles from '../styles/Home.module.css'
 import NumberItem from '../components/numberItem'
@@ -28,6 +29,7 @@ export default function Home() {
             <NumberItem
               number={i + 1}
               isHour={hours12(date) == (i + 1)}
+              key={uuid()}
             />
           )}
         </div>
@@ -37,10 +39,12 @@ export default function Home() {
               number={i}
               isMinute={getCurrentMinute === i}
               isSecond={getCurrentSecond === i}
+              key={uuid()}
               addZero
             />
           )}
         </div>
+        {/* <div className={styles.about}>Reproduction of the digital clock created by Rudolph de Harak. Extension created by Edgard Kozlowski.</div> */}
       </div>
     </div>
   )

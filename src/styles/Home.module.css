@@ -17,3 +17,10 @@
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 20px;
 }
+
+.about {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0.4;
+}
