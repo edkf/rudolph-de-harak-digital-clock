@@ -40,6 +40,7 @@ export default function Home() {
               isMinute={getCurrentMinute === i}
               isSecond={getCurrentSecond === i}
               key={uuid()}
+        
               addZero
             />
           )}
